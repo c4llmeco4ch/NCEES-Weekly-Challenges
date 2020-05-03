@@ -1,7 +1,7 @@
 import typing
 from typing import List
 
-# Who doesn't love a good one-liner?
+# Who doesn't love a one-liner?
 def find_shortest_subarray(arr: List[int], target: int) -> int:
     """
     Provided a list of ints,
@@ -15,6 +15,7 @@ def find_shortest_subarray(arr: List[int], target: int) -> int:
         if sum(arr[start:end]) >= target])
 
 
+# For sane people
 def readable_shortest_subarray(arr: List[int], target: int) -> int:
     """
     Provided a list of ints,
