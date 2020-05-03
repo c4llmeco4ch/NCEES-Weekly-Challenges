@@ -11,7 +11,7 @@ def find_shortest_subarray(arr: List[int], target: int) -> int:
     If no such subarray exists, return 0
     """
     return 0 if (len(arr) == 0 or sum(arr) < target) else\
-        min([end - start for start in range(len(arr)) for end in range(1, len(arr) + 1)
+        min([end - start for start in range(len(arr)) for end in range(start+1, len(arr) + 1)
         if sum(arr[start:end]) >= target])
 
 
